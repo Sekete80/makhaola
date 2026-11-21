@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Lesotho Interactive Tourism</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+ <nav class="navbar">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Lesotho Tourism</a>
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index2.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index3.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index4.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index5.html">Contact</a>
+            </li>
+        </ul>
+
+        <button class="theme-toggle" type="button" onclick="myFunction()">
+            Dark mode
+        </button>
+    </div>
+</nav>
+    <main>
+    
+        <section class="page-header">
+            <div class="container">
+                <h1>Get In Touch</h1>
+                
+            </div>
+        </section>
+
+        
+        <section class="section">
+            <div class="container">
+                <div class="row g-5">
+                    <!-- Contact Info -->
+                    <div class="col-lg-4">
+                        <div class="contact-info-card">
+                            <h3>Contact Information</h3>
+                            <p class="text-muted mb-4">Reach out to us directly or fill in the form and we'll reply soon.</p>
+                            
+                            <ul class="contact-details">
+                                <li>
+                                    <div class="contact-icon">
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                    </div>
+                                    <div>
+                                        <h6>Address</h6>
+                                        <p>Maseru 100, Lesotho<br>Kingdom in the Sky</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contact-icon">
+                                        <i class="bi bi-telephone-fill"></i>
+                                    </div>
+                                    <div>
+                                        <h6>Phone</h6>
+                                        <p>+266 2231 2345<br>+266 5876 5432</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contact-icon">
+                                        <i class="bi bi-envelope-fill"></i>
+                                    </div>
+                                    <div>
+                                        <h6>Email</h6>
+                                        <p>info@lesothotourism.com<br>bookings@lesothotourism.com</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contact-icon">
+                                        <i class="bi bi-clock-fill"></i>
+                                    </div>
+                                    <div>
+                                        <h6>Working Hours</h6>
+                                        <p>Mon — Fri: 8:00 AM — 5:00 PM<br>Sat: 9:00 AM — 1:00 PM</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-lg-8">
+                        <div class="form-card">
+                            <h3>Send Us a Message</h3>
+                            <p class="text-muted mb-4">Fill in the form below and we'll get back to you within 24 hours.</p>
+                            
+                            <div id="formAlert"></div>
+                            <form id="contactForm" novalidate>
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <label for="fullName" class="form-label">Full Name <span>*</span></label>
+                                        <input type="text" class="form-control" id="fullName" required placeholder="Your full name">
+                                        <div class="invalid-feedback">Please provide your full name.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email Address <span>*</span></label>
+                                        <input type="email" class="form-control" id="email" required placeholder="your@email.com">
+                                        <div class="invalid-feedback">Please provide a valid email.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Phone Number <span>*</span></label>
+                                        <input type="tel" class="form-control" id="phone" pattern="[0-9+\-\s()]{8,15}" required placeholder="+266 ...">
+                                        <div class="invalid-feedback">Please provide a valid phone number.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="subject" class="form-label">Subject <span>*</span></label>
+                                        <input type="text" class="form-control" id="subject" required placeholder="How can we help?">
+                                        <div class="invalid-feedback">Please provide a subject.</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Your Message <span>*</span></label>
+                                        <textarea class="form-control" id="message" rows="5" required placeholder="Tell us about your trip or question..."></textarea>
+                                        <div class="invalid-feedback">Please provide a message.</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn-submit">
+                                            <i class="bi bi-send me-2"></i>Send Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="section booking-section">
+            <div class="container">
+                <div class="booking-header text-center">
+                    <h2>Book Your Tour</h2>
+                    <p>Secure your spot — fill in the details below and we'll confirm your booking</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="booking-card">
+                            <div id="bookingAlert"></div>
+                            <form id="bookingForm" novalidate>
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <label for="bookName" class="form-label">Full Name <span>*</span></label>
+                                        <input type="text" class="form-control" id="bookName" required placeholder="Your full name">
+                                        <div class="invalid-feedback">Required</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="bookEmail" class="form-label">Email Address <span>*</span></label>
+                                        <input type="email" class="form-control" id="bookEmail" required placeholder="your@email.com">
+                                        <div class="invalid-feedback">Valid email required</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="bookDate" class="form-label">Preferred Tour Date <span>*</span></label>
+                                        <input type="date" class="form-control" id="bookDate" required>
+                                        <div class="invalid-feedback">Select a date</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="bookService" class="form-label">Select Service <span>*</span></label>
+                                        <select class="form-select" id="bookService" required>
+                                            <option value="">Choose an option...</option>
+                                            <option value="Guided Tour">Guided Tour</option>
+                                            <option value="Accommodation">Accommodation</option>
+                                            <option value="Adventure Package">Adventure Package</option>
+                                            <option value="Cultural Experience">Cultural Experience</option>
+                                        </select>
+                                        <div class="invalid-feedback">Select a service</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="bookPeople" class="form-label">Number of People <span>*</span></label>
+                                        <input type="number" class="form-control" id="bookPeople" min="1" required placeholder="How many?">
+                                        <div class="invalid-feedback">Enter number of people</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="bookPhone" class="form-label">Contact Phone <span>*</span></label>
+                                        <input type="tel" class="form-control" id="bookPhone" required placeholder="+266 ...">
+                                        <div class="invalid-feedback">Required</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="bookInfo" class="form-label">Additional Requirements</label>
+                                        <textarea class="form-control" id="bookInfo" rows="3" placeholder="Special requests, dietary needs, etc."></textarea>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button type="submit" class="btn-book">
+                                            <i class="bi bi-calendar-check me-2"></i>Confirm Booking
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+    <div class="container">
+        <h2 class="section-title">Your Saved Bookings</h2>
+        <p id="noBookings" class="text-center">No bookings saved yet. Book a tour above and it will appear here.</p>
+        <div class="table-responsive">
+            <table class="table table-striped" id="bookingsTable" hidden>
+                <thead>
+                    <tr><th>Name</th><th>Date</th><th>Service</th><th>People</th><th>Phone</th></tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="text-center">
+            <button type="button" id="clearBookings" class="btn btn-outline-danger">Clear bookings</button>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Lesotho Tourism.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+    <script src="forms.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

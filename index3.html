@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Lesotho Interactive Tourism</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Lesotho Tourism</a>
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index2.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index3.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index4.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index5.html">Contact</a>
+            </li>
+        </ul>
+
+        <button class="theme-toggle" type="button" onclick="myFunction()">
+            Dark mode
+        </button>
+    </div>
+</nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Services</h1>
+            
+        </div>
+    </section>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card">
+                            <div class="icon-box">
+                                <img src="guided tours.png" alt="Guide leading a tour group">
+                            </div>
+                            <h5>Guided Tours</h5>
+                            <p>Experience the true heart of Lesotho: trusted local guides will show you both its must-see highlights and beloved hidden gems.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card">
+                            <div class="icon-box">
+                                <img src="accormodation.jpg" alt="Traditional stone and thatch lodge">
+
+                            </div>
+                            <h5>Accommodation</h5>
+                            <p>Lesotho offers a diverse selection of places to stay, from upscale urban hotels in the capital to traditional stone-and-thatch lodges nestled in the breathtaking Maluti Mountains. </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card">
+                            <div class="icon-box">
+                                <img src="adventure.jpg" alt="Hikers on a mountain trail">
+
+                            </div>
+                            <h5>Adventure Activities</h5>
+                            <p>Lesotho, known as the "Kingdom in the Sky," features some of the highest and most rugged terrain in Southern Africa.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card">
+                            <div class="icon-box">
+                                 <img src="LITAXING.png" alt="Taxi for transport services">
+                            </div>
+                            <h5>Transport Services</h5>
+                            <p>When touring the rugged highlands and cultural landscapes of Lesotho, standard public transit is rarely sufficient. The steep mountain passes, unpaved tracks, and long distances between remote sights like Maletsunyane Falls require specialized, rugged tour operators or private 4x4 transport systems to safely experience the country.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card">
+                            <div class="icon-box">
+                                <img src="cultural difference.jpg" alt="Basotho blanket and Mokorotlo hat">
+                            </div>
+                            <h5>Cultural Experiences</h5>
+                            <p>
+cultural experience in lesotho
+
+Lesotho, known as the "Kingdom in the Sky," offers a uniquely preserved and raw cultural tapestry deeply tied to its mountain landscape, the iconic Basotho blanket, and its foundational royal history. To truly immerse yourself in the Basotho way of life, there are several foundational locations and experiences to build your journey around.
+
+
+
+</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card">
+                            <div class="icon-box">
+                                <img src="travel.png" alt="Travel information icon">
+                            </div>
+                            <h5>Travel Information</h5>
+                            <p>Known affectionately as the "Mountain Kingdom" or the "Kingdom in the Sky," Lesotho is a breathtaking, high-altitude country entirely landlocked by South Africa. It holds the unique geographical distinction of being the only nation on Earth situated entirely above 3,281 feet (1,000 meters), serving as a premier destination for rugged outdoor adventure, alpine hiking, and rich cultural traditions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="section calculator-section">
+            <div class="container">
+                <h2 class="section-title">Tour Cost Calculator</h2>
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="calculator-card">
+                            <div class="calculator-body">
+                                <div class="mb-4">
+                                    <label for="tourType" class="form-label">Choose Your Tour</label>
+                                    <select class="form-select" id="tourType">
+                                        <option value="0">Select a tour package</option>
+                                        <option value="1500">Guided Day Tour — M1,500 per person</option>
+                                        <option value="2500">Overnight Stay — M2,500 per person</option>
+                                        <option value="4000">Adventure Package — M4,000 per person</option>
+                                        <option value="5500">Full Experience — M5,500 per person</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="numPeople" class="form-label">How Many People</label>
+                                    <input type="number" class="form-control" id="numPeople" min="1" value="1">
+                                </div>
+                                <button class="btn-calculate w-100" onclick="calculateTour()">
+                                    <i class="bi bi-calculator me-2"></i>Calculate Total
+                                </button>
+                                <div class="total-display mt-4">
+                                    <p class="total-label">Estimated Total</p>
+                                    <h3 class="total-amount">M<span id="tourTotal">0</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Lesotho Tourism.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+        function calculateTour() {
+            const tourType = parseFloat(document.getElementById('tourType').value);
+            const numPeople = parseInt(document.getElementById('numPeople').value) || 1;
+            if (tourType === 0) {
+                alert('Please select a tour package first');
+                return;
+            }
+            const total = tourType * numPeople;
+            document.getElementById('tourTotal').textContent = total.toLocaleString();
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
